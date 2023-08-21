@@ -6,7 +6,7 @@ const finalPrice = document.getElementById('total')
 function itemClick(target){
     const selectItem = document.getElementById('selectItem')
     const itemName = (target.childNodes[3].innerText);
-    const ol = document.createElement('ol');
+    const ol = document.createElement('li');
     ol.innerText = itemName;
     selectItem.appendChild(ol);
 
