@@ -3,11 +3,11 @@ const discount =20;
 const discountPrice = document.getElementById('discount'); 
 const finalPrice = document.getElementById('total')
 
-function itemClick(target){
+function shopCard(target){
     const selectItem = document.getElementById('selectItem')
-    const itemName = (target.childNodes[3].innerText);
+    const cardName = (target.childNodes[3].innerText);
     const ol = document.createElement('li');
-    ol.innerText = itemName;
+    ol.innerText = cardName;
     selectItem.appendChild(ol);
 
     const itemPrice = (target.childNodes[5].innerText.split(" ")[0]);
